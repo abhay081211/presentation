@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Mera Record Sheet</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="wrap">
+  <h1>📒 Mera Record Sheet</h1>
+  <div class="sub">Excel ki tarah likhiye. Data is browser mein apne aap save hota hai; file ke roop mein Excel/CSV download bhi kar sakte hain.</div>
+  <div class="bar">
+    <button class="p" id="addRow">+ Nayi row</button>
+    <button id="addCol">+ Nayi column</button>
+    <button id="delCol">− Aakhri column hatao</button>
+    <input class="s" id="q" placeholder="🔍 Search karein…">
+  </div>
+  <div class="bar">
+    <button class="p" id="xlsx">⬇ Excel (.xlsx)</button>
+    <button id="csv">⬇ CSV</button>
+    <label class="btn">⬆ CSV/Excel kholein<input type="file" id="imp" accept=".csv,.xlsx,.xls" hidden></label>
+    <button id="clr">🗑 Sab saaf</button>
+  </div>
+  <div class="grid"><table id="t"></table></div>
+  <div class="msg" id="msg"></div>
+</div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.18.5/xlsx.full.min.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
